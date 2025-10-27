@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analog Clock</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analog Clock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
-<body>
-    
+<body class="bg-[#212121] flex items-center justify-center min-h-screen">
+
+  <div class="clockcontainer w-[410px] h-[410px] rounded-full bg-[#5D5D5D] flex items-center justify-center shadow-[4px_4px_50px_black]">
+    <div class="clock w-[400px] h-[400px] bg-[#383838] rounded-full relative text-white">
+
+      <!-- Numbers -->
+      <div class="number" style="--i:0"><span>12</span></div>
+      <div class="number" style="--i:1"><span>1</span></div>
+      <div class="number" style="--i:2"><span>2</span></div>
+      <div class="number" style="--i:3"><span>3</span></div>
+      <div class="number" style="--i:4"><span>4</span></div>
+      <div class="number" style="--i:5"><span>5</span></div>
+      <div class="number" style="--i:6"><span>6</span></div>
+      <div class="number" style="--i:7"><span>7</span></div>
+      <div class="number" style="--i:8"><span>8</span></div>
+      <div class="number" style="--i:9"><span>9</span></div>
+      <div class="number" style="--i:10"><span>10</span></div>
+      <div class="number" style="--i:11"><span>11</span></div>
+      <div class="hourhand bg-red-600 absolute w-[6px] h-[90px] top-1/2 left-1/2 origin-bottom"></div>
+      <div class="minuteshand bg-blue-600 absolute w-[4px] h-[130px] top-1/2 left-1/2 origin-bottom"></div>
+      <div class="secondshand bg-white absolute w-[2px] h-[150px] top-1/2 left-1/2 origin-bottom"></div>
+      <div class="dot w-[15px] h-[15px] bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
+
+    </div>
+  </div>
+
 </body>
 </html>
